@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials_Showcase.Features.Pages.MetricsPage"
+             Title="Metrics">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="15,10" >
+
+                <Label Text="Activer les mesures : "
+                       VerticalOptions="CenterAndExpand"/>
+                <Switch IsToggled="{Binding MetricsAreToggled}"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="Mesures">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Accelerometre :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding AccelterometerString}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Barometre :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding BarometerString}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Compas :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding CompassString}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Gyroscope :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding GyroscopeString}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Magnetometre :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding MagnetometerString}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Sens Orientation :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding OrientationSensorString}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

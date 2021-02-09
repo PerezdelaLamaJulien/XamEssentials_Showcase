@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials_Showcase.Features.Pages.TextToSpeechPage"
+             Title="Text to Speech">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" 
+                     Padding="20">
+            <Entry Text="{Binding Text}"
+                   Placeholder="Text à écouter" />
+
+            <Button Text="Ecouter"
+                    HorizontalOptions="CenterAndExpand" 
+                    Command="{Binding TextSpeechCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

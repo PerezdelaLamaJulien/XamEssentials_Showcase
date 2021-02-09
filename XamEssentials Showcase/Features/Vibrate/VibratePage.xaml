@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials_Showcase.Features.Pages.VibratePage"
+             Title="Vibrate">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" 
+                     Padding="20">
+            <Label Text="Rentrez la durée en secondes de la vibration (laissé vide pour la durée par défault"
+                   HorizontalOptions="Center"/>
+            <Entry Keyboard="Numeric"
+                   Text="{Binding VibrateSecondesString}"
+                   Placeholder="Durée"
+                   Margin="100,0"/>
+            
+            <Button Text="Faire Vibrer"
+                    HorizontalOptions="CenterAndExpand" 
+                    Command="{Binding VibrateCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

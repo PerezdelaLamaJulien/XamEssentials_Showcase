@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials_Showcase.Features.Pages.AppInformationsPage"
+             Title="Mobile Informations">
+    <ContentPage.Content>
+        <ScrollView>
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="Application">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Theme visuel de l'application :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding AppTheme}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Nom de l'application :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding AppName}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Nom du paquet de l'application :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding AppPackageName}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Version de l'application :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding AppVersion}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Version du build de l'application :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding AppBuild}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Batterie">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Charge de la batterie :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding BatteryChargeLevel}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Etat de la batterie :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding BatteryState}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Internet">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Connexion Internet :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding NetworkAccess}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Informations du périphérique">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Orientation du périphérique :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding DeviceOrientation}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Rotation du périphérique :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding DeviceRotation}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Largeur de l'écran (en pixels) :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding DeviceWidth}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Hauteur de l'écran (en pixels) :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding DeviceHeight}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Densité de l'écran (en pixels) :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding DeviceScreenDensity}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Modèle du périphérique :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding DeviceModel}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Fabricant du périphérique :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding DeviceManufacturer}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Nom du périphérique :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding DeviceName}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Version du système d'exploitation :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding OSVersion}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Plate-forme :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding Platform}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Type du périphérique :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding Idiom}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,0">
+                                <Label VerticalOptions="CenterAndExpand" Text="Premier lancement de l'application :"/>
+                                <Label VerticalOptions="CenterAndExpand" Text="{Binding FirstLaunchEver}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

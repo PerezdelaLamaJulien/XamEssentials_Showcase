@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials_Showcase.Features.Pages.GeolocationPage"
+             Title="Geolocation">
+    <ContentPage.Content>
+        <StackLayout Padding="20"
+                     VerticalOptions="Center">
+            <Label Text="{Binding LocationLong}"
+                   HorizontalOptions="Center"/>
+            
+            <Label Text="{Binding LocationLat}"
+                   HorizontalOptions="Center"/>
+            
+            <Label Text="{Binding LocationAlt}"
+                   HorizontalOptions="Center"/>
+
+            <Entry Text="{Binding GeoCodingAdresse}"
+                   Placeholder="Adresse a rechercher"/>
+
+            <StackLayout Orientation="Horizontal">
+
+                <Button Text="Get Location Infos"
+                        Command="{Binding GetLocationCommand}"/>
+
+                <Button Text="Get Adresse Infos"
+                        Command="{Binding GetLocationFromAdresseCommand}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

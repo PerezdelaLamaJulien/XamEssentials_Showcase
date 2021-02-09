@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamEssentials_Showcase.Home.HomePage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="info.png" 
+                     Command="{Binding AboutCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <FlexLayout BindableLayout.ItemsSource="{Binding Features}"
+                        Wrap="Wrap"
+                        JustifyContent="SpaceAround">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Frame WidthRequest="110"
+                               HeightRequest="80"
+                               BackgroundColor="Beige"
+                               Margin="5" Padding="0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"/>
+                            </Frame.GestureRecognizers>
+
+                        <Label Text="{Binding Name}"
+                               HorizontalTextAlignment="Center"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               FontSize="Medium"
+                               TextColor="Black"/>
+                        </Frame>
+
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
